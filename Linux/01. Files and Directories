@@ -1,0 +1,55 @@
+# Creating Files and Directories
+
+# Create empty files
+touch t1 t2 t3 t4 t5
+
+# Empty a file or craete an empty file
+>File.txt 
+
+# Create and save a file 
+vi sample.txt
+
+# Create directory and navigate
+
+mkdir dir1 dir2 dir3
+
+cd dir2
+
+touch file1
+
+# Create directory, subdirectories and parent directories if does not exist
+
+mkdir -p parentDir/childDir
+
+# Delete an empty directory
+
+rmdir dir1
+
+# Delete non empty directories
+
+rm -rf dir2
+
+# Overwrite and append into file
+
+osboxes@master$ls -lrt > dir_content
+osboxes@master$cat dir_content 
+total 0
+-rw-rw-r-- 1 osboxes osboxes 0 Jan 24 01:12 t3
+-rw-rw-r-- 1 osboxes osboxes 0 Jan 24 01:12 t2
+-rw-rw-r-- 1 osboxes osboxes 0 Jan 24 01:12 t1
+-rw-rw-r-- 1 osboxes osboxes 0 Jan 24 01:12 file.txt
+-rw-rw-r-- 1 osboxes osboxes 0 Jan 24 01:14 dir_content
+osboxes@master$ls -lrt >> dir_content
+osboxes@master$cat dir_content 
+total 0
+-rw-rw-r-- 1 osboxes osboxes 0 Jan 24 01:12 t3
+-rw-rw-r-- 1 osboxes osboxes 0 Jan 24 01:12 t2
+-rw-rw-r-- 1 osboxes osboxes 0 Jan 24 01:12 t1
+-rw-rw-r-- 1 osboxes osboxes 0 Jan 24 01:12 file.txt
+-rw-rw-r-- 1 osboxes osboxes 0 Jan 24 01:14 dir_content
+total 4
+-rw-rw-r-- 1 osboxes osboxes   0 Jan 24 01:12 t3
+-rw-rw-r-- 1 osboxes osboxes   0 Jan 24 01:12 t2
+-rw-rw-r-- 1 osboxes osboxes   0 Jan 24 01:12 t1
+-rw-rw-r-- 1 osboxes osboxes   0 Jan 24 01:12 file.txt
+-rw-rw-r-- 1 osboxes osboxes 258 Jan 24 01:14 dir_content
