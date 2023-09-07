@@ -1,4 +1,4 @@
-
+```
   501  git init
   502  echo "m1" > sample.txt
   503  ls
@@ -119,3 +119,4 @@
   618  echo "colour" >> a.js
   619  cat a.js
   620  git status
+```
