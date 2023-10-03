@@ -7,6 +7,10 @@ Now Extract using tar
 
 ``` tar -zxvf apache-tomcat-9.0.80.tar.gz ```
 
+install java jdk11
+
+` Amazon-linux-extras install java-openkdk11 `
+
 Rename the apache-tomcat-9.0.80 directory
 
 ``` mv apache-tomcat-9.0.80 apache9 ```
